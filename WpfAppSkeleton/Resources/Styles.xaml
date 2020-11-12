@@ -1,0 +1,21 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <!--CONVERTERS-->
+    <BooleanToVisibilityConverter x:Key="bool2VisibilityConverter" />
+    
+    <!--COLORS AND BRUSHES-->
+    <Color x:Key="BlueColor">#2093f7</Color>
+    <SolidColorBrush x:Key="BlueColorBrush" Color="{StaticResource BlueColor}"/>
+
+    <!-- CONTROL STYLES-->
+
+    <!-- This style applies to all TextBlocks because we didn't specify x:Key -->
+    <Style TargetType="{x:Type TextBlock}">
+        <Setter Property="FontSize" Value="14"/>
+    </Style>
+
+    <!--This style applies only to controls which sets their style using this name -->
+    <Style x:Key="BlueTextBoxStyle" TargetType="{x:Type TextBlock}">
+        <Setter Property="Foreground" Value="{StaticResource BlueColorBrush}"/>
+    </Style>
+</ResourceDictionary>
