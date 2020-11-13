@@ -29,4 +29,6 @@ Please note, there are many other dependency injection frameworks such as [Winds
 
 *MainWindow.xaml.cs* - This is the only view with a code-behind, as it serves as an entry point, for compositing classes (resolving needed dependencies and creating classes using MEF).
 
+*Helpers/Logger.cs* - **Remember to update your application name here, before using it!**
+
 
